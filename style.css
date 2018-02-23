@@ -19,16 +19,25 @@ body {
     height: 100%;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #161616;
+}
+
+.loader-title {
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #21D4FD;
+    margin-bottom: 1rem;
 }
 
 .loader-main-base {
     width: 400px;
     height: 8px;
     border-radius: 18px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(2,169,2070, .05);
     position: relative;
     display: flex;
     align-items: center;
@@ -40,8 +49,6 @@ body {
     height: 6px;
     border-radius: 18px;
     position: absolute;
-    left: 2px;
-    background-color: tomato;
     animation: loader-moving-part-animation;
     animation-duration: 1.25s;
     animation-iteration-count: infinite;
@@ -53,15 +60,6 @@ body {
     0% {
         left: -100px;
         background-color: #21D4FD;
-    }
-
-    25% {
-    }
-
-    50% {
-    }
-    
-    75% {
     }
 
     100% {
